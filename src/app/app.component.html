@@ -1,5 +1,6 @@
 <h1>{{titulo}}</h1>
 
-<button (click)="numero = numero +1;"> +1 </button>
-<h2>{{numero}}</h2>
-<button (click)="numero = numero -1; ">-1</button>
+<h3>La base es: {{base}}</h3>
+<button (click)="acumular(base)"> +{{base}} </button>
+<span>{{numero}}</span>
+<button (click)="acumular(-base)">-{{base}}</button>
