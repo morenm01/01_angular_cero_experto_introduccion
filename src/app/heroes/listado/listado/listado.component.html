@@ -6,11 +6,16 @@
     *ngIf es suficientemente inteligente para devolver false
     en caso de que el string esté vacío, null, false, undefined, etc.
 -->
-<div *ngIf="heroeBorrado" >
+<div *ngIf="heroeBorrado; else noBorrado" >
 
   <h3>Héroe borrado: <small>{{heroeBorrado}}</small></h3>
 
 </div>
+<ng-template #noBorrado>
+  <p> No ha borrado nada</p>
+</ng-template>
+
+
 <ul>
   <li *ngFor="let heroe of heroes; let i = index">
     {{i + 1}} - {{heroe}}

@@ -4,7 +4,7 @@ import {Component} from '@angular/core'
   selector: 'app-contador',
   templateUrl: './contador.component.html',
 })
-export class Contador{
+export class ContadorComponent{
   titulo: string = 'Contador';
   numero: number = 10;
   base  : number = 10;
