@@ -1,1 +1,19 @@
-<h1>Hola Heroes</h1>
+<h1> Heroes Component</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd>{{nombre}}</dd>
+
+  <td>Edad:</td>
+  <dd>{{edad}}</dd>
+
+  <td>Función:</td>
+  <dd>{{obtenerNombre()}}</dd>
+
+  <td>Capitalizada:</td>
+  <dd>{{capitalizada}}</dd>
+</dl>
+
+<button (click)="cambiarNombre()">Cambiar Nombre</button>
+
+<button (click)="cambiarEdad()">Cambiar Edad</button>
