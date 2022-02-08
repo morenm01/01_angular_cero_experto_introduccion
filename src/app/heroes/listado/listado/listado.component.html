@@ -1,7 +1,15 @@
 <p>Listado de Heroes</p>
-<div>
-  <h1>Héroe borrado:</h1>
-  <span>{{heroeBorrado}}</span>
+<button (click)="borrarLastHeroe()">Borrar último heroe</button>
+<button (click)="borrarFirstHeroe()">Borrar primer heroe</button>
+
+<!--<div *ngIf="heroeBorrado !== '' " >
+    *ngIf es suficientemente inteligente para devolver false
+    en caso de que el string esté vacío, null, false, undefined, etc.
+-->
+<div *ngIf="heroeBorrado" >
+
+  <h3>Héroe borrado: <small>{{heroeBorrado}}</small></h3>
+
 </div>
 <ul>
   <li *ngFor="let heroe of heroes; let i = index">
@@ -10,5 +18,3 @@
 </ul>
 
 
-<button (click)="borrarLastHeroe()">Borrar último heroe</button>
-<button (click)="borrarFirstHeroe()">Borrar primer heroe</button>
