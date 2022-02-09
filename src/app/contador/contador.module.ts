@@ -12,7 +12,9 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
    // CommonModule
-  ]
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 
 })
 export class ContadorModule{
